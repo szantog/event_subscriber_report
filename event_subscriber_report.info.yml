@@ -1,0 +1,6 @@
+name: Event Subscriber Report
+type: module
+description: Provides information about registered event subscribers.
+package: Development
+core: 8.x
+core_version_requirement: ^8 || ^9

@@ -1,0 +1,7 @@
+event_subscriber_report.report:
+  path: '/admin/reports/event-subscribers'
+  defaults:
+    _title: 'Event subscriber report'
+    _controller: '\Drupal\event_subscriber_report\Controller\EventSubscriberReportController::build'
+  requirements:
+    _permission: 'access site reports'
