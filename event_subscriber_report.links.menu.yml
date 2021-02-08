@@ -1,0 +1,5 @@
+event_subscriber_report.report:
+  title: 'Event subscriber report'
+  parent: system.admin_reports
+  description: 'Overview of event subscribers used in system.'
+  route_name: event_subscriber_report.report

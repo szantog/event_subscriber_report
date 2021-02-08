@@ -10,7 +10,6 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class ReportFilter extends FormBase {
 
-
   /**
    * {@inheritdoc}
    */
@@ -27,6 +26,9 @@ class ReportFilter extends FormBase {
       '#title' => $this->t('Filter by module'),
       '#size' => 20,
       '#default_value' => $this->getRequest()->get('module'),
+      '#attributes' => [
+        'style' => 'margin-right: 20px'
+      ]
     ];
 
     $form['event'] = [
@@ -34,14 +36,25 @@ class ReportFilter extends FormBase {
       '#title' => $this->t('Filter by event'),
       '#size' => 20,
       '#default_value' => $this->getRequest()->get('event'),
+      '#attributes' => [
+        'style' => 'margin-right: 20px'
+      ]
     ];
 
     $form['actions'] = [
       '#type' => 'actions',
+      '#attributes' => [
+        'style' => 'margin-top: 32px'
+      ]
     ];
+
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Filter'),
+    ];
+
+    $form['#attributes'] = [
+      'style' => 'display: flex',
     ];
 
     return $form;
