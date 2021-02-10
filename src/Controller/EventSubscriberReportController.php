@@ -33,7 +33,7 @@ class EventSubscriberReportController extends ControllerBase implements Containe
   public static function create(ContainerInterface $container) {
     return new static(
       $container->get('event_dispatcher'),
-      $container->get('request_stack'),
+      $container->get('request_stack')
     );
   }
   /**
