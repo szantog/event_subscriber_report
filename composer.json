@@ -1,0 +1,16 @@
+{
+    "name": "szantog/event_subscriber_report",
+    "type": "drupal-module",
+    "minimum-stability": "dev",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Gabor Szanto (szantog)",
+            "homepage": "https://www.drupal.org/u/szantog",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "phpdocumentor/reflection-docblock": "^4.0.0"
+    }
+}
