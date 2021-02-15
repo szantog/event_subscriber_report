@@ -1,5 +1,6 @@
 Add to you composer.json:
-```{
+```
+{
     "type": "package",
     "package": {
         "name": "szantog/event_subscriber_report",
